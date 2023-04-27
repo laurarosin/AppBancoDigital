@@ -16,13 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="View\ChavePixForm.xaml.cs">
-      <DependentUpon>ChavePixForm.xaml</DependentUpon>
-    </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Update="View\ChavePixForm.xaml">
+    <EmbeddedResource Update="View\CorrentistaForm.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
