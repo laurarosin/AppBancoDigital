@@ -1,4 +1,5 @@
 ﻿using AppBancoDigital.Model;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -8,13 +9,15 @@ namespace AppBancoDigital.Service
 {
    public class DataServiceCorrentista : DataService   
     {
-        public static async Task<List<ChavePix>> GetChavePixAsync()
+        public static async Task<List<Correntista>> GetCorrentistaPixAsync()
         {
             string json = await DataService.GetDataFromService("/correntista");
 
             List<Correntista> arr_correntista = JsonConvert.DeserializeObject<List<Correntista>>(json);
 
             return arr_correntista;
+
+
         }
 
         public static async Task<Correntista> Cadastrar(Correntista c)
