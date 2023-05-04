@@ -13,7 +13,7 @@
                    FontAttributes="Bold"
                    Margin="0,100,0,0"/>
 
-            <Button Text="Entrar"  
+            <Button Text="Cadastrar"  
                     BorderColor="Black" 
                     BorderWidth="2" 
                     WidthRequest="300"
@@ -25,7 +25,7 @@
                     Clicked="Button_Clicked"
                     Margin="0,350,0,0"/>
 
-            <Button Text="Cadastrar" 
+            <Button Text="Entrar" 
                     BorderColor="Black" 
                     BorderWidth="2" 
                     WidthRequest="300"
