@@ -55,5 +55,15 @@ namespace AppBancoDigital.Service
             return arr_correntista;
 
         }
+        public static async Task<Correntista> Entrar (Correntista c)
+        {
+            var json_a_enviar = JsonConvert.SerializeObject(c);
+
+            string json = await DataService.PostDataToService(json_a_enviar, "/Correntista/salvar");
+
+            Correntista p = JsonConvert.DeserializeObject<Correntista>(json);
+
+            return c;
+        }
     }
 }

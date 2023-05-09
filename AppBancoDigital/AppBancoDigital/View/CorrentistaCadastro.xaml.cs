@@ -17,6 +17,8 @@ namespace AppBancoDigital.View
         public CorrentistaCadastro()
         {
             InitializeComponent();
+
+            
         }
 
         private async void btn_cadastrar_Clicked(object sender, EventArgs e)

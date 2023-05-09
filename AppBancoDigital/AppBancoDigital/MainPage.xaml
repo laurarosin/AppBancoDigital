@@ -1,14 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.MainPage"
-              BackgroundColor="Violet" >
-    
+             x:Class="AppBancoDigital.MainPage">
+
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="#EA3769"
+                          Offset="0.1" />
+            <GradientStop Color="#9218EB"
+                          Offset="1.0"/>
+        </LinearGradientBrush>
+    </ContentPage.Background>
+
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Banco Digital" 
+            <Label Text="Bradesco" 
                    FontSize="60"
-                   TextColor="DeepPink"
+                   TextColor="White"
                    HorizontalOptions="Center"
                    FontAttributes="Bold"
                    Margin="0,100,0,0"/>

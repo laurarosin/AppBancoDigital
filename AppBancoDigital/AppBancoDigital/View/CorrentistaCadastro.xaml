@@ -1,23 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.CorrentistaCadastro"
-             BackgroundColor="Pink">
+             x:Class="AppBancoDigital.View.CorrentistaCadastro">
+
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="#F9D8DC"
+                          Offset="0.1" />
+            <GradientStop Color="#F78D98"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
+    
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Cadastro Do Correntista"
                 HorizontalOptions="CenterAndExpand" />
 
-            <Label Text="Qual o seu nome:" FontSize="20"/>
+            <Label Text="Qual o seu nome:" FontSize="20" TextColor="Black" />
             <Entry x:Name="txt_Nome" FontSize="20"/>
 
-            <Label Text="Digite a Data de Nascimento:" FontSize="20"/>
+            <Label Text="Digite a Data de Nascimento:" FontSize="20" TextColor="Black"/>
             <DatePicker x:Name="dtpck_data_nasc" Format="dd/MM/yyyy"/>
 
-            <Label Text="Informe seu cpf:" FontSize="20"/>
+            <Label Text="Informe seu cpf:" FontSize="20" TextColor="Black"/>
             <Entry x:Name="txt_cpf" FontSize="20"/>
 
-            <Label Text="Crie uma senha:" FontSize="20"/>
+            <Label Text="Crie uma senha:" FontSize="20" TextColor="Black"/>
             <Entry x:Name="txt_Senha" FontSize="20"/>
 
             <Button Text="Cadastrar" x:Name="btn_cadastrar" Clicked="btn_cadastrar_Clicked"

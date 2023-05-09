@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AppBancoDigital.Model;
+using AppBancoDigital.Service;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,9 +19,21 @@ namespace AppBancoDigital.View
             InitializeComponent();
         }
 
-        private void btn_entrar_Clicked(object sender, EventArgs e)
+        private async void btn_entrar_Clicked(object sender, EventArgs e)
         {
-
+            try
+            {
+                await DataServiceCorrentista.Entrar(new Correntista
+                {
+                    CPF = txt_cpf.Text,
+                    senha = txt_Senha.Text
+                });
+                await DisplayAlert("Parabéns!", "Você foi cadastrado.", "OK");
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
         }
     }
 }
