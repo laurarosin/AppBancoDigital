@@ -19,7 +19,8 @@
             <Entry x:Name="txt_cpf" FontSize="20"/>
 
             <Label Text="Digite a sua senha:" FontSize="20" TextColor="Black"/>
-            <Entry x:Name="txt_Senha" FontSize="20"/>
+            <Entry x:Name="txt_Senha" FontSize="20"
+                   ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing"/>
 
             <Button Text="Entrar" x:Name="btn_entrar" Clicked="btn_entrar_Clicked"
                     BackgroundColor="PaleVioletRed"

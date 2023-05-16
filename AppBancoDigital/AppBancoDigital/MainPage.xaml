@@ -20,6 +20,8 @@
                    HorizontalOptions="Center"
                    FontAttributes="Bold"
                    Margin="0,100,0,0"/>
+            <Image Source="Imagem.Logo_Bradesco.png"
+                   x:Name="Imagem"/>
 
             <Button Text="Cadastrar"  
                     BorderColor="Black" 

@@ -15,6 +15,7 @@ namespace AppBancoDigital
         {
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
+            Imagem.Source = ImageSource.FromResource("AppBancoDigital.Imagem.Logo_Bradesco.png");
         }
 
         private void Button_Clicked(object sender, EventArgs e)

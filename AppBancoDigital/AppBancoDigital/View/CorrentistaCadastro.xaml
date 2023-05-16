@@ -25,9 +25,10 @@
 
             <Label Text="Informe seu cpf:" FontSize="20" TextColor="Black"/>
             <Entry x:Name="txt_cpf" FontSize="20"/>
-
             <Label Text="Crie uma senha:" FontSize="20" TextColor="Black"/>
-            <Entry x:Name="txt_Senha" FontSize="20"/>
+            <Entry x:Name="txt_Senha" FontSize="20"
+                    ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing"/>
+           
 
             <Button Text="Cadastrar" x:Name="btn_cadastrar" Clicked="btn_cadastrar_Clicked"
                     BackgroundColor="PaleVioletRed"
