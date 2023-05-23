@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
              x:Class="AppBancoDigital.View.CorrentistaCadastro">
 
     <ContentPage.Background>
@@ -23,8 +24,10 @@
             <Label Text="Digite a Data de Nascimento:" FontSize="20" TextColor="Black"/>
             <DatePicker x:Name="dtpck_data_nasc" Format="dd/MM/yyyy"/>
 
-            <Label Text="Informe seu cpf:" FontSize="20" TextColor="Black"/>
-            <Entry x:Name="txt_cpf" FontSize="20"/>
+            <Label Text="CPF:" FontSize="Body" TextColor="Black"/>
+            <control:MaskedEntry x:Name="txt_cpf" TextColor="Black" Keyboard="Numeric"
+                                           Mask="XXX.XXX.XXX-XX"/>
+
             <Label Text="Crie uma senha:" FontSize="20" TextColor="Black"/>
             <Entry x:Name="txt_Senha" FontSize="20"
                     ReturnType="Done" IsPassword="True" ClearButtonVisibility="WhileEditing"/>

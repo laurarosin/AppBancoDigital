@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:control="clr-namespace:Xamarin.Forms.MaskedEntry;assembly=Xamarin.Forms.MaskedEntry" xmlns:local="clr-namespace:AppBancoDigital"
              x:Class="AppBancoDigital.View.CorrentistaEntrar">
     <ContentPage.Background>
         <LinearGradientBrush EndPoint="0,1">
@@ -15,8 +16,9 @@
             <Label Text="Entrar"
                 HorizontalOptions="CenterAndExpand" />
 
-            <Label Text="Digite se CPF:" FontSize="20" TextColor="Black"/>
-            <Entry x:Name="txt_cpf" FontSize="20"/>
+            <Label Text="CPF:" FontSize="Body" TextColor="Black"/>
+            <control:MaskedEntry x:Name="txt_cpf" TextColor="Black" Keyboard="Numeric"
+                                           Mask="XXX.XXX.XXX-XX"/>
 
             <Label Text="Digite a sua senha:" FontSize="20" TextColor="Black"/>
             <Entry x:Name="txt_Senha" FontSize="20"

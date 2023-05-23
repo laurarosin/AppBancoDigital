@@ -1,4 +1,4 @@
-﻿using AppBancoDigital.Model;
+﻿                                                                                                                                                                                           using AppBancoDigital.Model;
 using AppBancoDigital.Service;
 using System;
 using System.Collections.Generic;
