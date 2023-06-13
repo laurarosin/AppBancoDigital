@@ -24,7 +24,7 @@ namespace AppBancoDigital.Service
         {
             var json_a_enviar = JsonConvert.SerializeObject(c);
 
-            string json = await DataService.PostDataToService(json_a_enviar, "/Correntista/salvar");
+            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/salvar");
 
             Correntista p = JsonConvert.DeserializeObject<Correntista>(json);
 
@@ -35,7 +35,7 @@ namespace AppBancoDigital.Service
         {
             var json_a_enviar = JsonConvert.SerializeObject(q);
 
-            string json = await DataService.PostDataToService(json_a_enviar, "/Correntista/buscar");
+            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/buscar");
 
             List<Correntista> arr_correntista = JsonConvert.DeserializeObject<List<Correntista>>(json);
 
@@ -48,7 +48,7 @@ namespace AppBancoDigital.Service
         {
             var json_a_enviar = JsonConvert.SerializeObject(id);
 
-            string json = await DataService.PostDataToService(json_a_enviar, "/Correntista/delete");
+            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/delete");
 
             List<Correntista> arr_correntista = JsonConvert.DeserializeObject<List<Correntista>>(json);
 
@@ -59,7 +59,7 @@ namespace AppBancoDigital.Service
         {
             var json_a_enviar = JsonConvert.SerializeObject(c);
 
-            string json = await DataService.PostDataToService(json_a_enviar, "/Correntista/salvar");
+            string json = await DataService.PostDataToService(json_a_enviar, "/correntista/salvar");
 
             Correntista p = JsonConvert.DeserializeObject<Correntista>(json);
 
