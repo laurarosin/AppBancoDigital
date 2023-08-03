@@ -23,7 +23,7 @@ namespace AppBancoDigital.View
         {
             try
             {
-                await DataServiceCorrentista.Cadastrar(new Correntista
+                await DataServiceCorrentista.Entrar(new Correntista
                 {
                     CPF = txt_cpf.Text.Replace(".", "").Replace("-", ""),
                     senha = txt_Senha.Text
