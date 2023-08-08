@@ -27,10 +27,10 @@ namespace AppBancoDigital.View
             {
                 await DataServiceCorrentista.Cadastrar(new Correntista
                 {
-                    nome = txt_Nome.Text,
+                    Nome = txt_Nome.Text,
                     data_nasc = dtpck_data_nasc.Date,
                     CPF = txt_cpf.Text.Replace(".", "").Replace("-", ""),
-                    senha = txt_Senha.Text
+                    Senha = txt_Senha.Text
         
             });
                 await DisplayAlert("Parabéns!", "Você foi cadastrado.", "OK");

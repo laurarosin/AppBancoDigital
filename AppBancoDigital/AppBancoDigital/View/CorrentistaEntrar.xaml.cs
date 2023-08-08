@@ -26,7 +26,7 @@ namespace AppBancoDigital.View
                 await DataServiceCorrentista.Entrar(new Correntista
                 {
                     CPF = txt_cpf.Text.Replace(".", "").Replace("-", ""),
-                    senha = txt_Senha.Text
+                    Senha = txt_Senha.Text
                 });
                 await DisplayAlert("Parabéns!", "Você entrou na sua conta.", "OK");
             }

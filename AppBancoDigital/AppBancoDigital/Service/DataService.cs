@@ -59,7 +59,7 @@ namespace AppBancoDigital.Service
 
                 Console.WriteLine("_______________________________");
                 Console.WriteLine(response.Content.ReadAsStringAsync().Result);
-                Console.WriteLine("_______________________________");
+                Console.WriteLine("_______________________________");          
 
                 if (response.IsSuccessStatusCode)
                 {
