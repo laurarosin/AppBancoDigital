@@ -45,6 +45,7 @@
                     BackgroundColor="Pink" 
                     TextColor="Black"
                     Clicked="Button_Clicked_1"/>
+            
 
         </StackLayout>
     </ContentPage.Content>

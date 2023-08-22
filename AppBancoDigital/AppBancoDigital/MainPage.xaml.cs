@@ -27,5 +27,10 @@ namespace AppBancoDigital
         {
             Navigation.PushAsync(new CorrentistaEntrar());
         }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
     }
 }

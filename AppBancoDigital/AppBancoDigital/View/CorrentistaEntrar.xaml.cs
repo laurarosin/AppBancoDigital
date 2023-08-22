@@ -23,12 +23,21 @@ namespace AppBancoDigital.View
         {
             try
             {
-                await DataServiceCorrentista.Entrar(new Correntista
+                Correntista correntista_logado = await DataServiceCorrentista.Entrar(new Correntista
                 {
                     CPF = txt_cpf.Text.Replace(".", "").Replace("-", ""),
                     Senha = txt_Senha.Text
                 });
-                await DisplayAlert("Parabéns!", "Você entrou na sua conta.", "OK");
+
+                if(correntista_logado != null)
+                {
+                    App.DadosCorrentistaLogado = correntista_logado;
+
+                    await Navigation.PushAsync(new TelaInicial());
+                } else
+                {
+                    await DisplayAlert("Ops!", "Dados de login incorretos.", "OK");
+                }
             }
             catch (Exception ex)
             {
