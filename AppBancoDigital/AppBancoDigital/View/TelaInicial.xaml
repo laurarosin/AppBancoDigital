@@ -4,9 +4,19 @@
              x:Class="AppBancoDigital.View.TelaInicial">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="txt_Correntista"/>
+            <Label>
+                <Label.FormattedText>
+                    <FormattedString>
+                        <FormattedString.Spans>
+                            <Span Text="O seu saldo é:"/>
+                            <Span Text="R$1.0000,00" TextColor="Green"/>
+                        </FormattedString.Spans>
+                    </FormattedString>
+                </Label.FormattedText>
+            </Label>
+            <Button Text=" Fazer pix" Clicked="Button_Clicked"/>
+            <Button Text="Receber pix" Clicked="Button_Clicked_1"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
