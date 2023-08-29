@@ -10,18 +10,11 @@ using Xamarin.Forms.Xaml;
 namespace AppBancoDigital.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ReceberPix : ContentPage
+    public partial class PixLerQrCode : ContentPage
     {
-        public ReceberPix()
+        public PixLerQrCode()
         {
-            //NavigationPage.SetHasNavigationBar(this, false);
             InitializeComponent();
-        }
-
-        private void Button_Clicked(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new View.Pix.PixLerQrCode());
-
         }
     }
 }

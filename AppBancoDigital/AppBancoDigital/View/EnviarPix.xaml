@@ -1,11 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppBancoDigital.View.EnviarPix">
+             x:Class="AppBancoDigital.View.EnviarPix"
+             >
+    <ContentPage.Background>
+        <LinearGradientBrush EndPoint="0,1">
+            <GradientStop Color="#F9D8DC"
+                          Offset="0.1" />
+            <GradientStop Color="#F78D98"
+                          Offset="1.0" />
+        </LinearGradientBrush>
+    </ContentPage.Background>
     <ContentPage.Content>
         <StackLayout>
-            <Button Text="Gerar QR CODE" Clicked="Button_Clicked"/>
-            <Label Text="QR CODE vai aparecer abaixo:"/>
+            <Button Text="Gerar QR CODE" Clicked="Button_Clicked"
+                     BackgroundColor="PaleVioletRed"
+                    BorderColor="Black" 
+                    BorderWidth="2"
+                    Margin="10"/>
+            <Label Text=" O QR CODE vai aparecer abaixo:"
+                   FontSize="18"/>
 
             <Image x:Name="imagem_qrcode"/>
           
