@@ -29,5 +29,7 @@ namespace AppBancoDigital.View
         {
             Navigation.PushAsync(new View.ReceberPix());
         }
+
+       
     }
 }

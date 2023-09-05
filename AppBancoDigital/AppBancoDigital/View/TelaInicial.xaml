@@ -14,26 +14,35 @@
         <StackLayout>
 
             <Label x:Name="txt_Correntista"/>
+            <Label Text="Olá! Seja bem-vinda."
+                   HorizontalOptions="Center"
+                   FontSize="25"
+                   TextColor="Black"/>
             <Label>
                 <Label.FormattedText>
                     <FormattedString>
                         <FormattedString.Spans>
-                            <Span Text="O seu saldo é:"
-                                  FontSize="20"/>
-                            <Span Text="R$1.0000,00" TextColor="Green"
-                                  FontSize="20"/>
+                            <Span Text="Saldo disponível:"
+                               FontSize="20"
+                                  TextColor="Black"/>
+                            
+                         <Span Text="R$1.0000,00" TextColor="Green"
+                               FontSize="20"/>
+                            
                         </FormattedString.Spans>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
+            
             <Button Text=" Fazer pix" Clicked="Button_Clicked"
+                    BackgroundColor="PaleVioletRed"
+                    BorderColor="Black" 
+                    BorderWidth="2"/>
+            <Button Text="Receber pix" Clicked="Button_Clicked_1"  
                      BackgroundColor="PaleVioletRed"
                     BorderColor="Black" 
                     BorderWidth="2"/>
-            <Button Text="Receber pix" Clicked="Button_Clicked_1"
-                     BackgroundColor="PaleVioletRed"
-                    BorderColor="Black" 
-                    BorderWidth="2"/>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
