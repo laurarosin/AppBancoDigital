@@ -18,7 +18,13 @@
                     BorderWidth="2"
                     Margin="10"
                     VerticalOptions="End"/>
+            <Label Text=" O QR CODE vai aparecer abaixo:"
+       FontSize="18"/>
 
-            </StackLayout>
+          
+
+
+
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>
