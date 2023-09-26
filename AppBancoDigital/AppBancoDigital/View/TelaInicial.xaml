@@ -22,18 +22,19 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <FormattedString.Spans>
-                            <Span Text="Saldo disponível:"
+                            <Span Text="Saldo disponível: "
                                FontSize="20"
                                   TextColor="Black"/>
                             
-                         <Span Text="R$1.0000,00" TextColor="Green"
-                               FontSize="20"/>
+                         <Span Text="R$1.0000,00" TextColor="OrangeRed"
+                               FontSize="20"
+                               />
                             
                         </FormattedString.Spans>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-            
+  
             <Button Text=" Fazer pix" Clicked="Button_Clicked"
                     BackgroundColor="PaleVioletRed"
                     BorderColor="Black" 
