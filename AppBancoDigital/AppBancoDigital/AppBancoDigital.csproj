@@ -11,11 +11,27 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Imagem\cartao.PNG" />
     <None Remove="Imagem\Logo_Bradesco.png" />
+    <None Remove="Imagem\pagamentos.PNG" />
+    <None Remove="Imagem\pix.PNG" />
+    <None Remove="Imagem\tranferencias.PNG" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Imagem\cartao.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imagem\Logo_Bradesco.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\pagamentos.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\pix.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\tranferencias.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

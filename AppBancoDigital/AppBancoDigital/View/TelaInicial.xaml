@@ -34,15 +34,39 @@
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
-  
+            
+            
             <Button Text=" Fazer pix" Clicked="Button_Clicked"
                     BackgroundColor="PaleVioletRed"
                     BorderColor="Black" 
                     BorderWidth="2"/>
+            
             <Button Text="Receber pix" Clicked="Button_Clicked_1"  
                      BackgroundColor="PaleVioletRed"
                     BorderColor="Black" 
                     BorderWidth="2"/>
+
+            <Grid Grid.ColumnDefinitions="*, *" Grid.RowDefinitions="*, *" 
+                  Margin="1,5,15,0"
+                  Padding="15">
+
+                <ImageButton x:Name="btn_transf" Clicked="btn_transferencia_Clicked" 
+                             HeightRequest="100"
+                             BackgroundColor="Transparent" Grid.Column="0" Grid.Row="0"/>
+                
+                <ImageButton x:Name="btn_pix" Clicked="btn_pix_Clicked"
+                             HeightRequest="100"
+                             BackgroundColor="Transparent" Grid.Column="0" Grid.Row="1"/>
+                <ImageButton x:Name="btn_cartao" Clicked="btn_cartao_Clicked"
+                                HeightRequest="100"
+                                
+                                 BackgroundColor="Transparent" Grid.Column="1" Grid.Row="1"/>
+
+                <ImageButton x:Name="btn_pagamentos" Clicked="btn_pagamentos_Clicked"
+                            HeightRequest="100"
+                            BackgroundColor="Transparent" Grid.Column="1" Grid.Row="0"/>
+                
+            </Grid>
             
         </StackLayout>
     </ContentPage.Content>
