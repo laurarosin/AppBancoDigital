@@ -13,38 +13,39 @@
     <ContentPage.Content>
         <StackLayout>
 
-            <Label x:Name="txt_Correntista"/>
-            <Label Text="Olá! Seja bem-vinda."
-                   HorizontalOptions="Center"
-                   FontSize="25"
+            
+
+            <Label Text="Meu saldo disponível:"
+                   HorizontalOptions="Fill"
+                   FontSize="20"
+                   HeightRequest="30"
                    TextColor="Black"/>
-            <Label>
-                <Label.FormattedText>
-                    <FormattedString>
-                        <FormattedString.Spans>
-                            <Span Text="Saldo disponível: "
-                               FontSize="20"
-                                  TextColor="Black"/>
-                            
-                         <Span Text="R$1.0000,00" TextColor="OrangeRed"
-                               FontSize="20"
-                               />
-                            
-                        </FormattedString.Spans>
-                    </FormattedString>
-                </Label.FormattedText>
-            </Label>
+
+            <Grid Grid.ColumnDefinitions="*, *" Grid.RowDefinitions="*, *" 
+                    Margin="1,5,15,0"
+                    Padding="15">
+
+
+                <ImageButton x:Name="btn_saldo" Clicked="btn_saldo_Clicked" 
+                      HeightRequest="30"
+                      Margin="0,-50,-40,0"
+                     BackgroundColor="Transparent" Grid.Column="0" Grid.Row="0"/>
+                <Label Text="1.000,00"
+                       HorizontalOptions="Center"
+                       TextColor="Black"
+                      Margin="0,-20,0,0"/>
+
+               
+
+                <ImageButton x:Name="btn_barra" Clicked="btn_barra_Clicked" 
+                        HeightRequest="35"
+                        HorizontalOptions="Fill"
+                        Margin="0,-3,-150,0"
+                        BackgroundColor="Transparent" Grid.Column="0" Grid.Row="1"/>
+               
+
+            </Grid>
             
-            
-            <Button Text=" Fazer pix" Clicked="Button_Clicked"
-                    BackgroundColor="PaleVioletRed"
-                    BorderColor="Black" 
-                    BorderWidth="2"/>
-            
-            <Button Text="Receber pix" Clicked="Button_Clicked_1"  
-                     BackgroundColor="PaleVioletRed"
-                    BorderColor="Black" 
-                    BorderWidth="2"/>
 
             <Grid Grid.ColumnDefinitions="*, *" Grid.RowDefinitions="*, *" 
                   Margin="1,5,15,0"

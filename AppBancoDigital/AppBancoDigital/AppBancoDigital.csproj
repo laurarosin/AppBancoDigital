@@ -11,15 +11,24 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Imagem\barra.PNG" />
     <None Remove="Imagem\cartao.PNG" />
+    <None Remove="Imagem\extrato.PNG" />
     <None Remove="Imagem\Logo_Bradesco.png" />
     <None Remove="Imagem\pagamentos.PNG" />
     <None Remove="Imagem\pix.PNG" />
-    <None Remove="Imagem\tranferencias.PNG" />
+    <None Remove="Imagem\saldo.png" />
+    <None Remove="Imagem\transferencias.PNG" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Imagem\barra.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imagem\cartao.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\extrato.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagem\Logo_Bradesco.png">
@@ -31,7 +40,10 @@
     <EmbeddedResource Include="Imagem\pix.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
-    <EmbeddedResource Include="Imagem\tranferencias.png">
+    <EmbeddedResource Include="Imagem\saldo.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\transferencias.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
   </ItemGroup>

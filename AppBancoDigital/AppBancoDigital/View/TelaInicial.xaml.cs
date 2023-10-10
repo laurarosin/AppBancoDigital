@@ -15,12 +15,14 @@ namespace AppBancoDigital.View
         public TelaInicial()
         {
             InitializeComponent();
-            btn_transf.Source = ImageSource.FromResource("AppBancoDigital.Imagem.tranferencias.png");
+            btn_transf.Source = ImageSource.FromResource("AppBancoDigital.Imagem.transferencias.PNG");
             btn_pix.Source = ImageSource.FromResource("AppBancoDigital.Imagem.pix.PNG");
             btn_pagamentos.Source = ImageSource.FromResource("AppBancoDigital.Imagem.pagamentos.PNG");
             btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Imagem.cartao.PNG");
-
-            txt_Correntista.Text = App.DadosCorrentistaLogado.Nome;
+            btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.saldo.png");
+            btn_barra.Source = ImageSource.FromResource("AppBancoDigital.Imagem.barra.PNG");
+            btn_extrato.Source = ImageSource.FromResource("AppBancoDigital.Imagem.extrato.PNG");
+            //txt_Correntista.Text = App.DadosCorrentistaLogado.Nome;
         }
 
         private void Button_Clicked(object sender, EventArgs e)
@@ -51,7 +53,27 @@ namespace AppBancoDigital.View
 
         private void btn_pagamentos_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.TelaInicial());
+            Navigation.PushAsync(new View.ReceberPix());
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_saldo_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_barra_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_extrato_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }
