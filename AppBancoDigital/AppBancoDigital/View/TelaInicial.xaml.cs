@@ -21,7 +21,7 @@ namespace AppBancoDigital.View
             btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Imagem.cartao.PNG");
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.saldo.png");
             btn_barra.Source = ImageSource.FromResource("AppBancoDigital.Imagem.barra.PNG");
-            btn_extrato.Source = ImageSource.FromResource("AppBancoDigital.Imagem.extrato.PNG");
+           
             //txt_Correntista.Text = App.DadosCorrentistaLogado.Nome;
         }
 
@@ -71,9 +71,6 @@ namespace AppBancoDigital.View
 
         }
 
-        private void btn_extrato_Clicked(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
