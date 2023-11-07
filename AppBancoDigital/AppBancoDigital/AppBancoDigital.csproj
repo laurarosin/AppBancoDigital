@@ -14,7 +14,11 @@
     <None Remove="Imagem\barra.PNG" />
     <None Remove="Imagem\cartao.PNG" />
     <None Remove="Imagem\extrato.PNG" />
+    <None Remove="Imagem\extrato_pix.PNG" />
+    <None Remove="Imagem\limite_pix.PNG" />
     <None Remove="Imagem\Logo_Bradesco.png" />
+    <None Remove="Imagem\minhas_chave.PNG" />
+    <None Remove="Imagem\notificacoes.PNG" />
     <None Remove="Imagem\pagamentos.PNG" />
     <None Remove="Imagem\pix.PNG" />
     <None Remove="Imagem\saldo.png" />
@@ -31,7 +35,19 @@
     <EmbeddedResource Include="Imagem\extrato.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\extrato_pix.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\limite_pix.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
     <EmbeddedResource Include="Imagem\Logo_Bradesco.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\minhas_chave.PNG">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Imagem\notificacoes.PNG">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="Imagem\pagamentos.PNG">

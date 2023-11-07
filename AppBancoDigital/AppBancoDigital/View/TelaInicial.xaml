@@ -33,12 +33,12 @@
                 <Label Text="1.000,00"
                        HorizontalOptions="Center"
                        TextColor="Black"
-                      Margin="0,-19,0,0"/>
+                      Margin="0,-17,0,0"/>
 
                
 
                 <ImageButton x:Name="btn_barra" Clicked="btn_barra_Clicked" 
-                        HeightRequest="35"
+                        HeightRequest="45"
                         HorizontalOptions="Fill"
                         Margin="0,-3,-150,0"
                         BackgroundColor="Transparent" Grid.Column="0" Grid.Row="1"/>
@@ -68,7 +68,31 @@
                             BackgroundColor="Transparent" Grid.Column="1" Grid.Row="0"/>
                 
             </Grid>
+
+            <Label Text="Outros Serviços:"
+                   HorizontalOptions="Center"
+                   TextColor="Black"
+                   FontSize="Subtitle"/>
             
+            <Grid Grid.ColumnDefinitions="*, *" Grid.RowDefinitions="*, *" 
+                  Margin="1,5,15,0"
+                  Padding="20">
+                <ImageButton x:Name="btn_extrato_pix" Clicked="btn_extrato_pix_Clicked"
+                             HeightRequest="100"
+                             BackgroundColor="Transparent"  Grid.Column="0" Grid.Row="0"/>
+
+                <ImageButton x:Name="btn_limite_pix" Clicked="btn_limite_pix_Clicked"
+                             HeightRequest="100"
+                             BackgroundColor="Transparent"  Grid.Column="0" Grid.Row="1"/>
+                <ImageButton x:Name="btn_minhas_chave" Clicked="btn_minhas_chave_Clicked"
+                             HeightRequest="100"
+                             BackgroundColor="Transparent" Grid.Column="1" Grid.Row="0"/>
+                <ImageButton x:Name="btn_notificacoes" Clicked="btn_notificacoes_Clicked"
+                             HeightRequest="100"
+                             BackgroundColor="Transparent" Grid.Column="1" Grid.Row="1"/>
+
+            </Grid>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -21,6 +21,10 @@ namespace AppBancoDigital.View
             btn_cartao.Source = ImageSource.FromResource("AppBancoDigital.Imagem.cartao.PNG");
             btn_saldo.Source = ImageSource.FromResource("AppBancoDigital.Imagem.saldo.png");
             btn_barra.Source = ImageSource.FromResource("AppBancoDigital.Imagem.barra.PNG");
+            btn_extrato_pix.Source = ImageSource.FromResource("AppBancoDigital.Imagem.extrato_pix.PNG");
+            btn_limite_pix.Source = ImageSource.FromResource("AppBancoDigital.Imagem.limite_pix.PNG");
+            btn_minhas_chave.Source = ImageSource.FromResource("AppBancoDigital.Imagem.minhas_chave.PNG");
+            btn_notificacoes.Source = ImageSource.FromResource("AppBancoDigital.Imagem.notificacoes.PNG");
            
             //txt_Correntista.Text = App.DadosCorrentistaLogado.Nome;
         }
@@ -71,6 +75,25 @@ namespace AppBancoDigital.View
 
         }
 
-        
+        private void btn_extrato_pix_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_limite_pix_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_minhas_chave_Clicked(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btn_notificacoes_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.TelaInicial());
+
+        }
     }
 }
